@@ -25,8 +25,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 typedef NS_ENUM(NSInteger,RotateState)
 {
     RotateStateStop = 0,
-    RotateStateRun,
-
+    RotateStateRun
 };
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UIViewControllerPreviewingDelegate>
@@ -36,7 +35,7 @@ typedef NS_ENUM(NSInteger,RotateState)
     //旋转图片
     UIImageView *rotateImage;
     //旋转状态
-    RotateState *rotateState;
+    RotateState rotateState;
     
     
 }
